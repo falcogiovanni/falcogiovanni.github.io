@@ -1,0 +1,40 @@
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+#header{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+    align-content: bottom;
+}
+.title{
+    vertical-align: baseline;
+}
+.subtitle{
+    margin-left: 1em;
+    font-size: .8em;
+    vertical-align: baseline;
+}
+nav{
+    margin-top: 5px;
+    background: #5090C0;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    padding: .5em;
+    display: inline;
+    cursor: pointer;
+    
+}
+footer{
+    align-content: center;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 0px;
+    height: 3em;
+    background: papayawhip;
+}
