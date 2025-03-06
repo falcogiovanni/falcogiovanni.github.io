@@ -7,25 +7,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <script src="https://kit.fontawesome.com/db36bd79b8.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="src/app.js"></script>
         <title>Giovanni Falco - Home</title>
     </head>
     <body>
-        <div id="header">
-            <span class="title">GIOVANNI FALCO</span>
-            <span class="subtitle">games and graphics programmer</span>
-        </div>
-        <nav>
-            <ul>
-                <li index="1">Home</li>
-                <li index="2">Portfolio</li>
-                <li index="3">About</li>
-                <li index="4">Contact</li>
+        <nav id="navbar" class="navbar">
+            <div class="header" id="header">
+                <span class="title">GIOVANNI FALCO</span>
+                <span class="subtitle">games and graphics programmer</span>
+            </div>
+            <ul id="nav_container">
+                <li class="navOption" id="nav_home" index="1"><a href="#top">Home</a></li>
+                <li class="navOption" id="nav_portfolio" index="2"><a href="#portfolio">Portfolio</a></li>
+                <li class="navOption" id="nav_about" index="3"><a href="#about">About</a></li>
+                <li class="navOption" id="nav_contact" index="4"><a href="#footer">Contact</a></li>
             </ul>
         </nav>
         <main>
-            <p>Page is WIP ;)</p>
+            <p>Lorem ipsum</p>
         </main>
-        <footer>
+        <div class="portfolio" id="portfolio">
+            <p>Lorem ipsum</p>
+        </div>
+        <div class="about" id="about">
+            <p>
+                Lorem ipsum
+            </p>
+        </div>
+        <footer id="footer">
             wip@gmail.com
         </footer>
     </body>

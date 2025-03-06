@@ -1,13 +1,35 @@
+:root{
+    --navPosition: static;
+    --col: Blue;
+    --navTop: 40px;
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
+    margin: 0;
     min-height: 100vh;
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     font-family: 'Poppins', sans-serif;
 }
-#header{
+a:any-link{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+a:not(.active):hover{
+    color: #606060;
+}
+.active{
+    color: #efefef !important;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-thickness: .1em;
+}
+.header{
     border-bottom: 1px solid #000000;
     padding-bottom: 5px;
-    align-content: bottom;
+    text-wrap-style: pretty;
 }
 .title{
     vertical-align: baseline;
@@ -17,9 +39,15 @@ body{
     font-size: .8em;
     vertical-align: baseline;
 }
+.wrapper{
+    min-width: 100%;
+}
 nav{
-    margin-top: 5px;
-    background: #5090C0;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color:#428ed4;
 }
 nav ul{
     list-style-type: none;
@@ -30,6 +58,15 @@ nav li{
     cursor: pointer;
     
 }
+main{
+    margin-top: 60px;
+}
+#portfolio{
+    min-height: 2000px;
+}
+#about{
+    min-height: 2000px;
+}
 footer{
     align-content: center;
     text-align: center;
@@ -37,4 +74,10 @@ footer{
     margin-bottom: 0px;
     height: 3em;
     background: papayawhip;
+}
+
+@media only screen and (max-width: 460px){
+    nav{
+        background-color:red;
+    }
 }
